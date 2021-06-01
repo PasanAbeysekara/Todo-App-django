@@ -1,0 +1,16 @@
+{% extends 'base_layout.html' %} {% block content %}
+<h2>ToDO list</h2>
+{% for task in tasks %}
+<div class="task-detail">
+  <fieldset>
+    <h2>{{task.title}}</h2>
+    <h4>{{task.detail}}</h4>
+    <h5>~{{task.pub_date}}</h5>
+    <a href="{% url 'tasks:delete' pk=task.id %}" class="delete-btn">Delete</a>
+  </fieldset>
+</div>
+{% endfor %}
+<div class="create-task">
+  <a href="{% url 'tasks:create' %}">Create</a>
+</div>
+{% endblock %}
