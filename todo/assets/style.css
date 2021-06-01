@@ -1,0 +1,17 @@
+/* body {
+  background: #3e3f40;
+  color: #a4a5a6;
+} */
+
+a {
+  color: dodgerblue;
+  text-decoration: none;
+}
+
+.delete-btn {
+  color: mediumvioletred;
+}
+
+.create-task a {
+  color: green;
+}
